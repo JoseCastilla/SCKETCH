@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scketch!</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="jumbotron text-center">
+			<h1 class="title">SCKETCH</h1>
+			<p>Bienvenido a SCKETCH, es momento de liberar tu creatividad!</p>
+		</div>
+		
+	</header>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-sm-12">
+				<p>Escoge el color de trabajo aquí: </p>
+				<button type="button" class="btn btn-danger btn-lg" id="red" onClick="selectColor(this)">Rojo</button>
+				<button type="button" class="btn btn-success btn-lg" id="green" onClick="selectColor(this)">Verde</button>
+				<button type="button" class="btn btn-primary btn-lg" id="blue" onClick="selectColor(this)">Azul</button>
+				<button type="button" class="btn btn-dark btn-lg" id="black" onClick="selectColor(this)">Negro</button>
+			</div>
+		
+			<div class="col-sm-10">
+				<!-- <p>Área de dibujo y Herramientas</p> -->
+				<canvas class="drawnArea" id="drawn_area" width="600" height="400"></canvas>
+			</div>
+
+			<div class="col-sm-2 text-left">
+				
+				<div class="col-sm-12">
+					<button type="button" class="btn-lg" id="lapiz"> <span class="glyphicon glyphicon-pencil"></span> Lapiz</button>
+				</div>
+
+				<div class="col-sm-12">
+					<button type="button" class="btn-lg" id="plumon"> <span class="glyphicon glyphicon-pencil"></span> Plumon</button>
+				</div>
+
+				<div class="col-sm-12">
+					<button type="button" class="btn-lg" id="borrador"> <span class="glyphicon glyphicon-erase"></span> Borrador</button>
+				</div>
+
+				<div class="col-sm-12">
+					<p></p>
+				</div>
+
+				<div class="col-sm-12">
+					<button type="button" class="btn-lg" id="guardar"> <span class="glyphicon glyphicon-download"></span> Guardar</button>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-lg-12">
+				<p>Agrega tu firma aquí y comparte!</p>
+			</div>
+			<div class="col-lg-4">
+				<input type="text" class="form-control" id="firma">
+			</div>
+			<div class="col-lg-2">
+				<button type="button" class="btn-sm"> <span class="glyphicon glyphicon-ok"></span> Firmar!</button>
+			</div>
+		</div>
+	</div>
+	
+
+	<script src="js/app.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
